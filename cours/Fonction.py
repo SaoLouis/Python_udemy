@@ -44,7 +44,7 @@ a = 10
 foo()
 print(globals())
 
-#instruction global
+#instruction global (a ne pas utiliser)
 def get_comment(note):
 	global avis
 	if note > 15:
@@ -57,5 +57,19 @@ def get_comment(note):
 		avis = "Tu as tout faux"
 	return avis
 commentaire= get_comment(20)
+print(commentaire)
+
+#instructions à utilisers
+def get_comment(note):
+	if note > 15:
+		avis = "Bravo"
+	elif note > 10:
+		avis = "Peut mieux faire..."
+	elif note > 5:
+		avis = "Attention !"
+	else:
+		avis = "Tu as tout faux"
+	return avis
+commentaire= get_comment(10)
 print(commentaire)
 

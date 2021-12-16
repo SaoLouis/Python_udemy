@@ -1,5 +1,4 @@
 def get_comment(note):
-	global avis
 	if note > 15:
 		avis = "Bravo"
 	elif note > 10:
@@ -9,5 +8,5 @@ def get_comment(note):
 	else:
 		avis = "Tu as tout faux"
 	return avis
-commentaire= get_comment(20)
+commentaire= get_comment(10)
 print(commentaire)
