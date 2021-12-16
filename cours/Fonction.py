@@ -1,29 +1,37 @@
-#Retourner une valeur
+# Retourner une valeur
 def element():
-    return 5
+	return 5
+
+
 a = element()
 
 print(a)
 
 
-#Paramètres et arguments
+# Paramètres et arguments
 def affiche(message):
-    print(message)
+	print(message)
+
 
 affiche("Bonjour")
-#--------------------------------------------
+
+
+# --------------------------------------------
 def affiche(message="Message par défaut"):
-    print(message)
+	print(message)
+
 
 affiche()
 
-#--------------------------------------------
+
+# --------------------------------------------
 def addition(a, b):
-    return a + b
+	return a + b
+
 
 addition(b=10, a=5)
 
-#Afficher une variable
+# Afficher une variable
 ma_variable = 10
 
 
@@ -34,17 +42,17 @@ def afficher_variable():
 afficher_variable()
 
 
-#Globals
+# Globals
 def foo():
 	b = 5
-
 
 
 a = 10
 foo()
 print(globals())
 
-#instruction global (a ne pas utiliser)
+
+# instruction global (a ne pas utiliser)
 def get_comment(note):
 	global avis
 	if note > 15:
@@ -56,10 +64,13 @@ def get_comment(note):
 	else:
 		avis = "Tu as tout faux"
 	return avis
-commentaire= get_comment(20)
+
+
+commentaire = get_comment(20)
 print(commentaire)
 
-#instructions à utilisers
+
+# instructions à utilisers
 def get_comment(note):
 	if note > 15:
 		avis = "Bravo"
@@ -70,19 +81,25 @@ def get_comment(note):
 	else:
 		avis = "Tu as tout faux"
 	return avis
-commentaire= get_comment(10)
+
+
+commentaire = get_comment(10)
 print(commentaire)
 
-#Exercice sur les fonctions
+
+# Exercice sur les fonctions
 def saluer(message):
-	print("Bonjour",message)
+	print("Bonjour", message)
+
 
 saluer("Patrick")
-#-------------------------
+
+
+# -------------------------
 def addition(a, b):
-    c = a + b
-    return c
+	c = a + b
+	return c
+
 
 resultat = addition(5, 10)
 print(resultat)
-
