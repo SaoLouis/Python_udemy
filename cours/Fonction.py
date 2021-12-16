@@ -73,3 +73,16 @@ def get_comment(note):
 commentaire= get_comment(10)
 print(commentaire)
 
+#Exercice sur les fonctions
+def saluer(message):
+	print("Bonjour",message)
+
+saluer("Patrick")
+#-------------------------
+def addition(a, b):
+    c = a + b
+    return c
+
+resultat = addition(5, 10)
+print(resultat)
+
