@@ -1,0 +1,20 @@
+Égal à : a  ==  b
+
+Non égal à : a  !=  b
+
+Moins que : a  <  b
+
+Moins que ou égal à : a  <=  b
+
+Plus que : a  >  b
+
+Plus que ou égal à : a  >= b
+
+Exemple : 
+nombre_de_sieges = 30
+nombre_dinvites = 25
+
+if nombre_dinvites < nombre_de_sieges:
+   # autoriser plus d’invités
+else: 
+   # ne pas autoriser plus d’invités
